@@ -13,6 +13,7 @@ import time
 import csv
 import io
 from datetime import datetime, timezone
+from pathlib import Path
 import streamlit as st
 
 # ==========================================
@@ -76,7 +77,7 @@ def append_to_google_sheet(row_data: dict):
             )
         else:
             creds = Credentials.from_service_account_file(
-                GOOGLE_CREDENTIALS_FILE, scopes=scopes
+                str(Path(__file__).parent / GOOGLE_CREDENTIALS_FILE), scopes=scopes
             )
         client = gspread.authorize(creds)
         sheet = client.open(GOOGLE_SHEET_NAME).sheet1
