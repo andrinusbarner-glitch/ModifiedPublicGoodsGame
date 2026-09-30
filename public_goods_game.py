@@ -303,8 +303,3 @@ elif st.session_state.stage == "results":
         st.write(f"Player inputs: {st.session_state.player_inputs}")
         if st.session_state.sheets_error:
             st.warning(f"Google Sheets error: {st.session_state.sheets_error}")
-
-    if st.button("🔄 Play Again", use_container_width=True):
-        for key in list(st.session_state.keys()):
-            del st.session_state[key]
-        st.rerun()
