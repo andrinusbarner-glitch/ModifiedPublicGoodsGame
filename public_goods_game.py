@@ -46,7 +46,7 @@ DONATION_PROBABILITIES = [
 # 2. Create a Google Cloud service account, download the JSON key
 # 3. Share your Google Sheet with the service account email
 # 4. Set these two values:
-GOOGLE_SHEET_NAME = "Public Goods Game Data"       # name of your Google Sheet
+GOOGLE_SHEET_NAME = "Public_Goods_Game_Data"       # name of your Google Sheet
 GOOGLE_CREDENTIALS_FILE = "credentials.json"        # path to service account JSON
 # If you don't want Google Sheets logging, just leave these as-is;
 # the app will skip it gracefully and still offer CSV download.
