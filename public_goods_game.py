@@ -196,7 +196,7 @@ Good luck!
 elif st.session_state.stage == "playing":
     r = st.session_state.current_round
 
-    st.markdown(f"### Round {r + 1} of {NUM_ROUNDS}")
+    st.markdown(f"### Round {r + 1}")
     st.markdown("---")
 
     # ---------- INPUT PHASE ----------
